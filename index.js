@@ -13,6 +13,6 @@ server.on('connection', function() {
     console.log('connection event');
 });
 
-server.listen(8124, function() {
+server.listen(process.env.PORT || 5000, function() {
     console.log('listen even');
 });
