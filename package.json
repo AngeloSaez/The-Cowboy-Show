@@ -4,9 +4,27 @@
     "description": "just when people thought there were no more cowboys...",
     "engines": {
         "node": "14.x"
-    } ,
+    },
     "main": "index.js",
     "scripts": {
         "start": "node index.js"
-    }
+    },
+    "dependencies": {
+        "ejs": "^3.1.5",
+        "express": "^4.15.2"
+    },
+    "devDependencies": {
+        "got": "^11.3.0",
+        "tape": "^4.7.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/AngeloSaez/The-Cowboy-Show"
+    },
+    "keywords": [
+        "node",
+        "heroku",
+        "express"
+      ],
+      "license": "MIT"
 }

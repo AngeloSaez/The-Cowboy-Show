@@ -2,5 +2,5 @@ var http = require('http');
 
 http.createServer(function (request, response) {
     response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Hello World - from Monkey');
+    response.end('Hello World - from Monkey the setup bunny');
 }).listen(8124);
