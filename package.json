@@ -1,0 +1,12 @@
+{
+    "name": "the-cowboy-show",
+    "version": "0.0.1",
+    "description": "just when people thought there were no more cowboys...",
+    "engines": {
+        "node": "14.x"
+    } ,
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    }
+}
