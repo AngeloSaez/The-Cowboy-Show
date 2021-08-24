@@ -5,9 +5,14 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     console.log('request event');
+    
+    fs.readFile('homepage.html', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        return res.end();
+    });
+    
     response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    response.write(data);
     response.end('demonstration for dad');
 })
 
