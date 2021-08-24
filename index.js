@@ -5,7 +5,7 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     console.log('request event');
-    fs.readFile('homepage.html', function(err, data) {
+    fs.readFile('html/homepage.html', function(err, data) {
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write(data);
         return response.end();
