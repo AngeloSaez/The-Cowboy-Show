@@ -5,7 +5,7 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     // Load styles
-    app.use(express.static(__dirname + '/styles'));
+    index.use(express.static(__dirname + '/styles'));
     // Load files
     fs.readFile('html/homepage.html', function(err, data) {
         response.writeHead(200, {'Content-Type': 'text/html'});
