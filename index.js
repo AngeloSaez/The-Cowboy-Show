@@ -1,11 +1,10 @@
 var http = require('http');
-var express = require('express');
 var fs = require('fs');
 var server = http.createServer();
 
 server.on('request', function (request, response) {
     // Load styles
-    index.use(express.static(__dirname + '/styles'));
+    fs.readFile('styles/homepage.css');
     // Load files
     fs.readFile('html/homepage.html', function(err, data) {
         response.writeHead(200, {'Content-Type': 'text/html'});
