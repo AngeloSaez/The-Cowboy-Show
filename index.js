@@ -20,8 +20,10 @@ server.on('request', function (request, response) {
     fs.readFile('html/homepage.html', function(err, data) {
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write(data);
-        return response.end();
     });
+
+    // End response
+    response.end();
 
 });
 
