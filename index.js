@@ -5,7 +5,7 @@ var server = http.createServer();
 server.on('request', function (request, response) {
     // Load CSS
     fs.readFile('styles/homepage.css', function(err, data) {;
-        // response.writeHead(200, {'Content-Type': 'text/css'});
+        response.writeHead(200, {'Content-Type': 'text/css'});
         // response.write(data);
         // return response.end();
     });
