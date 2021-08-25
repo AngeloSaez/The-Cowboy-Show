@@ -4,9 +4,9 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Static resources
-app.use(express.static('html'));
-app.use(express.static('resources'));
-app.use(express.static('styles'));
+app.use('/html', express.static('html'));
+app.use('/resources', express.static('resources'));
+app.use('/styles', express.static('styles'));
 
 // Create response
 app.get('/', (request, response) => {
