@@ -1,13 +1,15 @@
 var http = require('http');
 var fs = require('fs');
 var server = http.createServer();
+var homepageStyles = require('./styles/homepage.css');
+
 
 server.on('request', function (request, response) {
     // Load CSS
-    fs.readFile('styles/homepage.css', function(err, data) {
-        response.writeHead(200, {'Content-Type': 'text/css'});
-        // response.write(data);
-    });
+    // fs.readFile('styles/homepage.css', function(err, data) {
+    //     response.writeHead(200, {'Content-Type': 'text/css'});
+    //     response.write(data);
+    // });
     
     // Load HTML
     fs.readFile('html/homepage.html', function(err, data) {
