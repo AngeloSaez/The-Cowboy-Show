@@ -5,6 +5,8 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
 
+    fs.readFileSync('resources/cowboy_art.png');
+
     // Load CSS
     if (request.url === '/styles/homepage.css') {
         response.writeHead(200, {'Content-Type': 'text/css'});
