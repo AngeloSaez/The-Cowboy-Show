@@ -5,13 +5,13 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     // Load CSS
-    if (request.url === '/styles/homepage.css') {
+    if (request.url === 'styles/homepage.css') {
         response.writeHead(200, {'Content-Type': 'text/css'});
         fs.createReadStream('styles/homepage.css').pipe(response);
     }
 
     // Load image
-    if (request.url === '/resources/cowboy_art.png') {
+    if (request.url === 'resources/cowboy_art.png') {
         response.writeHead(200, {'Content-Type': 'image/png'});
         fs.createReadStream('resources/cowboy_art.png').pipe(response);
     }
