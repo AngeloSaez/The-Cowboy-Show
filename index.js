@@ -4,6 +4,10 @@ var port = process.env.PORT || 5000;
 var server = http.createServer();
 
 server.on('request', function (request, response) {
+
+    response.writeHead(200, {'Content-Type': 'image/png'});
+    fs.createReadStream('resources/cowboy_art.png').pipe(response);
+
     // Load CSS
     if (request.url === '/styles/homepage.css') {
         response.writeHead(200, {'Content-Type': 'text/css'});
