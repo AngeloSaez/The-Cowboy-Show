@@ -11,7 +11,7 @@ app.use(express.static('styles'));
 // Create response
 app.get('/', (request, response) => {
     response.send('hello world, yo!');
-    response.sendFile('html/homepage.html');
+    response.sendFile('homepage.html');
 });
   
 // Listening event
