@@ -1,11 +1,20 @@
+// Constant global variables
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+// Static resources
+app.use(express.static('html'));
+app.use(express.static('resources'));
+app.use(express.static('styles'));
+
+// Create response
+app.get('/', (request, response) => {
+    response.send('hello world, yo!');
+    response.sendFile('html/homepage.html');
 });
   
+// Listening event
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
