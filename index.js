@@ -1,15 +1,12 @@
-var http = require('http');
-var fs = require('fs');
+const http = require('http');
+const fs = require('fs');
+var port = process.env.PORT || 5000;
 var server = http.createServer();
-var homepageStyles = require('./styles/homepage.css');
-
 
 server.on('request', function (request, response) {
     // Load CSS
-    // fs.readFile('styles/homepage.css', function(err, data) {
-    //     response.writeHead(200, {'Content-Type': 'text/css'});
-    //     response.write(data);
-    // });
+    response.writeHead(200, {'Content-Type': 'text/css'});
+    fs.createReadStream('./styles/homepage.css').pipe(response);
     
     // Load HTML
     fs.readFile('html/homepage.html', function(err, data) {
@@ -24,6 +21,6 @@ server.on('connection', function() {
     console.log('connection event');
 });
 
-server.listen(process.env.PORT || 5000, function() {
+server.listen(port, function() {
     console.log('listen even');
 });
