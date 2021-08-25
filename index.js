@@ -5,8 +5,10 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     // Load CSS
-    response.writeHead(200, {'Content-Type': 'text/css'});
-    fs.createReadStream('styles/homepage.css').pipe(response);
+    if (request.url === '/homepage.css') {
+        response.writeHead(200, {'Content-Type': 'text/css'});
+        fs.createReadStream('styles/homepage.css').pipe(response);
+    }
     
     // Load HTML
     fs.readFile('html/homepage.html', function(err, data) {
