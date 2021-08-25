@@ -4,10 +4,13 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     // Load CSS
-    fs.readFile('styles/homepage.css', function(err, data) {;
+    fs.readFile('styles/homepage.css', function(err, data) {
         response.writeHead(200, {'Content-Type': 'text/css'});
         response.write(data);
+        return response.end();
     });
+
+    fs.
     
     // Load HTML
     fs.readFile('html/homepage.html', function(err, data) {
