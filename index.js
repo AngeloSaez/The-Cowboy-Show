@@ -9,6 +9,12 @@ server.on('request', function (request, response) {
         response.writeHead(200, {'Content-Type': 'text/css'});
         fs.createReadStream('styles/homepage.css').pipe(response);
     }
+
+    // Load image
+    if (request.url === '/styles/homepage.css') {
+        response.writeHead(200, {'Content-Type': 'text/css'});
+        fs.createReadStream('styles/homepage.css').pipe(response);
+    }
     
     // Load HTML
     fs.readFile('html/homepage.html', function(err, data) {
