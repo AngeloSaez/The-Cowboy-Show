@@ -9,21 +9,13 @@ server.on('request', function (request, response) {
         response.writeHead(200, {'Content-Type': 'text/css'});
         fs.createReadStream('styles/homepage.css').pipe(response);
     }
-
-    // Load image
-    // if (request.url === '/resources/cowboy_art.png') {
-    //     response.writeHead(200, {'Content-Type': 'image/png'});
-    //     fs.createReadStream('resources/cowboy_art.png').pipe(response);
-    // }
     
     // Load HTML
     fs.readFile('html/homepage.html', function(err, data) {
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write(data);
+        return response.end();
     });
-
-    // End response
-    response.end();
 
 });
 
