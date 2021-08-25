@@ -5,7 +5,7 @@ var server = http.createServer();
 
 server.on('request', function (request, response) {
     // Load CSS
-    if (request.url === '/homepage.css') {
+    if (request.url === '/styles/homepage.css') {
         response.writeHead(200, {'Content-Type': 'text/css'});
         fs.createReadStream('styles/homepage.css').pipe(response);
     }
