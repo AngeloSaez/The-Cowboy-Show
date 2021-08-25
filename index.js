@@ -11,9 +11,9 @@ server.on('request', function (request, response) {
     }
 
     // Load image
-    if (request.url === '/styles/homepage.css') {
-        response.writeHead(200, {'Content-Type': 'text/css'});
-        fs.createReadStream('styles/homepage.css').pipe(response);
+    if (request.url === '/resources/cowboy_art.png') {
+        response.writeHead(200, {'Content-Type': 'image/png'});
+        fs.createReadStream('resources/cowboy_art.png').pipe(response);
     }
     
     // Load HTML
