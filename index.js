@@ -1,12 +1,11 @@
 // Constant global variables
 const express = require('express');
+const path = require('path')
 const app = express();
 const port = process.env.PORT || 5000;
 
 // Static resources
-app.use('/html', express.static('html'));
-app.use('/resources', express.static('resources'));
-app.use('/styles', express.static('styles'));
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 // Create response
 app.get('/', (request, response) => {
