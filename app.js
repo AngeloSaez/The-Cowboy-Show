@@ -7,9 +7,9 @@ const indexRouter = require('./routes/index');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 // express setup
-// app.use(express.json());
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-module.exports = app;
+// module.exports = app;
