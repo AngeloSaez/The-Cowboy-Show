@@ -1,30 +1,16 @@
 {
-    "name": "the-cowboy-show",
-    "version": "0.0.1",
-    "description": "just when people thought there were no more cowboys...",
-    "engines": {
-        "node": "14.x"
-    },
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js"
-    },
-    "dependencies": {
-        "ejs": "^3.1.5",
-        "express": "^4.15.2"
-    },
-    "devDependencies": {
-        "got": "^11.3.0",
-        "tape": "^4.7.0"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/AngeloSaez/The-Cowboy-Show"
-    },
-    "keywords": [
-        "node",
-        "heroku",
-        "express"
-      ],
-      "license": "MIT"
+  "name": "cowboy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
 }
