@@ -1,3 +1,4 @@
+// constant variables
 const app = express();
 const express = require('express');
 const path = require('path');
@@ -9,7 +10,8 @@ app.set('view engine', 'jade');
 // express setup
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-
+// routing setup
 app.use('/', indexRouter);
 
-// module.exports = app;
+// export
+module.exports = app;
