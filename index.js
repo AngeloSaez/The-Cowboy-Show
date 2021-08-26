@@ -10,7 +10,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 // Create response
 app.get('/', (request, response) => {
     response.send('hello world, yo!');
-    response.sendFile('homepage.html');
+    response.sendFile('html/homepage.html');
 });
   
 // Listening event
