@@ -1,7 +1,13 @@
 .welcome {
-  background-color: #593300;
-  color: #32bd26;
+  color: #593300;
 }
+
+.information {
+  background-color: #593300;
+  
+
+}
+
 
 h1 {
   color: #593300;
@@ -22,5 +28,6 @@ h2 {
 }
 
 p {
+  color: #eec889;
   font-family: Arial, Helvetica, sans-serif;
 }
