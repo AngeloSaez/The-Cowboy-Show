@@ -7,11 +7,16 @@ body {
 
 .welcome {
   background-color: #c8bc6e;
-  background: #6ec86e;
   color: #593300;
   padding-top: 16%;
   padding-bottom: 16%;
 }
+
+.welcome-image {
+  background-repeat: no-repeat;
+  display: flex;
+}
+
 
 .information {
   background-color: #593300;
