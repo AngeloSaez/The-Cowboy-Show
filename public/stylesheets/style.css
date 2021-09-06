@@ -13,6 +13,7 @@ body {
 .welcome-image {
   background-repeat: no-repeat;
   width: 100%;
+  display: block;
 }
 
 .welcome {
