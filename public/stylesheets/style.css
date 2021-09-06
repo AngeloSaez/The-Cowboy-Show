@@ -7,14 +7,15 @@ body {
 
 .welcome-image {
   background-repeat: no-repeat;
-  width: 100%
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .welcome {
   background-color: #593300; 
   color: #c8bc6e;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .information {
@@ -22,20 +23,14 @@ body {
 }
 
 h1 {
-  color: #593300;
   font-size: 200%;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 1%;
-  margin-bottom: 1%;
   text-align: center;
 }
 
 h2 {
-  color: #593300;
   font-size: 400%;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 1%;
-  margin-bottom: 1%;
   text-align: center;
 }
 
