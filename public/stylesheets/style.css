@@ -19,6 +19,7 @@ body {
 .welcome {
   background-color: #593300; 
   color: #c8bc6e;
+  text-align:center;
 }
 
 .information {
@@ -26,17 +27,15 @@ body {
 }
 
 h1 {
-  text-align: center;
-  display: inline-block;
-  font-size: 15px;
+  display: inline;
+  font-size: 45px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-  display: inline-block;
   font-size: 20px;
+  display: inline;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: right !important;
 
 }
 
