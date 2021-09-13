@@ -21,28 +21,29 @@ body {
 
 .welcome {
   background-color: #593300; 
-  color: #c8bc6e;
+  border-top: 4px solid #e2c86e;
+  color: #e2c86e;
   text-align:center;
 }
 
 .information {
   background-color: #593300;
+  background-image: linear-gradient(to top, rgba(126, 99, 50, 1.0), rgba(0, 0, 0, 0.0) 100%);
 }
 
 h1 {
   display: inline;
-  font-size: 45px;
+  font-size: 7vw;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
-  font-size: 20px;
   display: inline;
+  font-size: 3vw;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 p {
-  color: #eec889;
+  color: #c8bc6e;
   font-family: Arial, Helvetica, sans-serif;
 }
