@@ -29,27 +29,54 @@ body {
 .information {
   background-color: #593300;
   background-image: linear-gradient(to top, rgba(126, 99, 50, 1.0), rgba(0, 0, 0, 0.0) 100%);
+  padding-bottom: 2vw;
 }
 
 .information-content {
   background-color: #e2c86e;
-  margin-right: 10vw;
-  margin-left: 10vw;
+  border-bottom: 4px solid #593300;
+  padding-right: 10vw;
+  padding-left: 10vw;
 }
 
 h1 {
   display: inline;
   font-size: 7vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Suez One';
 }
 
 h2 {
-  display: inline;
-  font-size: 3vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arvo';
 }
 
 p {
-  color: #c8bc6e;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #593300;
+  font-family: 'Open Sans';
+}
+
+/* latin */
+@font-face {
+  font-family: 'Suez One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/suezone/v5/taiJGmd_EZ6rqscQgOFOmouC-50x.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKqScQ7Z7o_vo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
