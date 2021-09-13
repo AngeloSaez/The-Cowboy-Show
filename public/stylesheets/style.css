@@ -39,6 +39,16 @@ body {
   padding-left: 10vw;
 }
 
+.content-block {
+  color: #897d32;
+  border-bottom: 4px solid #897d32;
+}
+
+.button-block {
+  color: #e2c86e;
+  background-color: #897d32;
+}
+
 h1 {
   display: inline;
   font-size: 7vw;
