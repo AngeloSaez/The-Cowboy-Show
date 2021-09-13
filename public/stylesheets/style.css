@@ -31,6 +31,12 @@ body {
   background-image: linear-gradient(to top, rgba(126, 99, 50, 1.0), rgba(0, 0, 0, 0.0) 100%);
 }
 
+.information-content {
+  background-color: #e2c86e;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
 h1 {
   display: inline;
   font-size: 7vw;
