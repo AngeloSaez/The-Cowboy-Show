@@ -35,8 +35,8 @@ body {
 .information-content {
   background-color: #e2c86e;
   border-bottom: 4px solid #593300;
-  padding-right: 10vw;
-  padding-left: 10vw;
+  padding-right: 20vw;
+  padding-left: 20vw;
 }
 
 .content-block {
