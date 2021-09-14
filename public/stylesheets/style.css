@@ -37,11 +37,13 @@ body {
   border-bottom: 4px solid #593300;
   padding-right: 20vw;
   padding-left: 20vw;
+  text-align: center;
 }
 
 .content-block {
   color: #897d32;
   border-bottom: 4px solid #897d32;
+  text-align: left;
 }
 
 .view-portfolio {
@@ -49,21 +51,23 @@ body {
   background-color: #897d32;
   border-radius: 4px;
   border-color: #e2c86e;
-  padding: 15px 32px;
+  padding: 20px 48px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 30px;
+  font-family: 'Arvo';
 }
 
 h1 {
   display: inline;
-  font-size: 24vw;
+  font-size: 7vw;
   font-family: 'Suez One';
 }
 
 h2 {
   font-family: 'Arvo';
+  font-size: 26px;
 }
 
 p {
