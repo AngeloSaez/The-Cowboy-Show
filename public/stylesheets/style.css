@@ -44,6 +44,12 @@ body {
   border-bottom: 4px solid #897d32;
 }
 
+.portrait {
+  float: right;
+  width: 25vw;
+  border: 4px solid #897d32;
+}
+
 .button-block {
   color: #e2c86e;
   background-color: #897d32;
