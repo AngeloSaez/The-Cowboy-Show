@@ -30,6 +30,7 @@ body {
   background-color: #593300;
   background-image: linear-gradient(to top, rgba(126, 99, 50, 1.0), rgba(0, 0, 0, 0.0) 100%);
   padding-bottom: 2vw;
+  height: auto;
 }
 
 .information-content {
