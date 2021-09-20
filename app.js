@@ -2,18 +2,18 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const indexRouter = require('./routes/index');
 
-// view engine setup
-app.set('view engine', 'jade');
-// remove layouts
-app.set('view options', { layout: false });
+// router setup
+const router = express.Router();
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
+});
+
 // express setup
-app.use(express.json());
-// static file upload
+app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-// routing setup
 app.use('/', indexRouter);
 
 // export
