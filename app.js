@@ -14,7 +14,7 @@ app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', indexRouter);
+// app.use('/', indexRouter);
 
 // export
 module.exports = app;
