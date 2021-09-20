@@ -6,6 +6,8 @@ const indexRouter = require('./routes/index');
 
 // view engine setup
 app.set('view engine', 'jade');
+// remove layouts
+app.set('view options', { layout: false });
 // express setup
 app.use(express.json());
 // static file upload
