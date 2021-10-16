@@ -32,7 +32,7 @@ let ambient_color;
 function preload_gallery() {
   entry_width = box_size + box_spacing;
   total_width = (row_width - 1) * entry_width;
-  cartridge = loadModel('../public/models/cartridge.obj');
+  cartridge = loadModel('models/cartridge.obj');
   ambient_color = color(202, 253, 253);
 
 }
