@@ -9,6 +9,8 @@ const project_count = 1;
 ////////////////////////////////////////////////////////////
 // Resources
 let cartridge;
+let sticker;
+let sticker_image_default;
 
 ////////////////////////////////////////////////////////////
 // Effects
@@ -31,7 +33,9 @@ function preload_gallery() {
   canvas_height = windowHeight;
   // Resources preload
   cartridge = loadModel('models/cartridge.obj');
-  // Effects preload
+  sticker = loadModel('models/cartridge.obj');
+  sticker_image_default = loadImage('stickers/default_sticker.png');
+  // Effects preloaddfddd
   page_offset = canvas_width / 3;
   box_scale = 10.0;
   hover_amplitude = 80;
