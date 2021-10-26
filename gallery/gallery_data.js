@@ -34,6 +34,6 @@ function preload_gallery() {
   // Effects preload
   page_offset = canvas_width / 3;
   box_scale = 8.0;
-  hover_amplitude = 48;
+  hover_amplitude = 80;
   ambient_color = color(202, 253, 253);
 }
