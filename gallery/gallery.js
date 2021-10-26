@@ -66,7 +66,7 @@ function drawCartridge(wave_offset) {
   // model(cartridge);
   // sticker
   // push();
-  // texture(sticker_image_default);
+  texture(sticker_image_default);
   model(sticker);
   // pop();
   // reset transform
