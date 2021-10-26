@@ -39,8 +39,8 @@ function preload_gallery() {
   box_spacing = 16;
   box_scale = 1.75;
   hover_y = canvas_height / 2;
-  hover_amplitude = box_size;
-  entry_width = box_size + box_spacing;
+  hover_amplitude = 48;
+  entry_width = hover_amplitude + box_spacing;
   total_width = (row_width - 1) * entry_width;
   ambient_color = color(202, 253, 253);
 }
