@@ -54,17 +54,17 @@ function drawCartridge(wave_offset) {
   // oscillation
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
-  translate(0, sin(wave_offset * 10 + sin_offset), 0);
+  let translation_y = sin(wave_offset * 10 + sin_offset);
   // scale calculation
-  const p5js_cartridge_ssize = 16;
-  const desired_cartridge_size = p5js_cartridge_ssize * box_scale;
-  translate(-1 * desired_cartridge_size / 2, 0, 0);
-  scale(box_scale);
+  const p5js_cartridge_size = 16;
+  const desired_cartridge_size = p5js_cartridge_size * box_scale;
+  let translation_x = -1 * desired_cartridge_size / 2;
   // create model
+  translate(translation_x, translation_y, 0);
+  scale(box_scale);
   model(cartridge);
   // reset transform
-  translate(0, sin(wave_offset * -10 + sin_offset), 0);
-  translate(1 * desired_cartridge_size / 2, 0, 0);
+  translate(-translation_x, -translation_y, 0);
   scale(1.0);
 }
 

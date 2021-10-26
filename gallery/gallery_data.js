@@ -14,7 +14,6 @@ let cartridge;
 // Effects
 const row_width = 1;
 let page_offset; // 128
-let box_spacing; // 16
 let box_scale;
 let hover_amplitude; // 16
 const hover_period_in_frames = 300;
@@ -34,7 +33,6 @@ function preload_gallery() {
   cartridge = loadModel('models/cartridge.obj');
   // Effects preload
   page_offset = canvas_width / 3;
-  box_spacing = 16;
   box_scale = 16.0;
   hover_amplitude = 48;
   ambient_color = color(202, 253, 253);
