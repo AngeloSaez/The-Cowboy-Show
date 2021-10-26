@@ -59,6 +59,7 @@ function centerExhibits() {
 }
 
 function drawExhibits() {
+  setupCartridgeMaterial();
   for (var i = 0; i < project_count; i++) {
     // Calculate Z offset 
     let mouse_proximity = calculateMouseProximity(i);
@@ -74,16 +75,28 @@ function drawExhibits() {
   }
 }
 
-function drawCartridge(wave_offset) {
-  const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
-  const sin_offset = time_ratio * 2 * PI;
-  translate(0, sin(wave_offset * 10 + sin_offset), 0);
+function setupCartridgeMaterial() {
   specularMaterial(500);
   fill(95, 95, 120);
   shininess(3); // 5
+}
+
+function drawCartridge(wave_offset) {
+  // oscillation
+  const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
+  const sin_offset = time_ratio * 2 * PI;
+  translate(0, sin(wave_offset * 10 + sin_offset), 0);
+  // scale calculation
+  const p5js_cartridge_ssize = 16;
+  const desired_cartridge_size = 256;
+  translate(-1 * desired_cartridge_size / 2, 0, 0);
+  scale(box_scale);
+  // create model
   model(cartridge);
-  box(16);
+  // reset transform
   translate(0, sin(wave_offset * -10 + sin_offset), 0);
+  translate(1 * desired_cartridge_size / 2, 0, 0);
+  scale(1.0);
 }
 
 
