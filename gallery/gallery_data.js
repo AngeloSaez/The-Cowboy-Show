@@ -37,7 +37,7 @@ function preload_gallery() {
   // Effects preload
   page_offset = canvas_width / 3;
   box_size = canvas_height / 5;
-  box_spacing = box_size;
+  box_spacing = box_size / 4;
   hover_y = canvas_height / 2;
   hover_amplitude = box_size;
   entry_width = box_size + box_spacing;
