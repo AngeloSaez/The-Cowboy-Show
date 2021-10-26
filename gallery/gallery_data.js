@@ -4,7 +4,7 @@ let canvas_width; // 480
 let canvas_height; // 320
 const c_grid_state = 0;
 const c_focused_state = 1;
-const project_count = 10;
+const project_count = 1;
 
 ////////////////////////////////////////////////////////////
 // Resources

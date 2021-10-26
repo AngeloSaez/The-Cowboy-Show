@@ -40,7 +40,7 @@ function drawExhibits() {
   setupCartridgeMaterial();
   for (var i = 0; i < project_count; i++) {
     drawCartridge(i);
-    translate(page_offset, 0, 0);
+    // translate(page_offset, 0, 0);
   }
 }
 
