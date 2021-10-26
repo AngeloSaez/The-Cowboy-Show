@@ -55,7 +55,7 @@ function drawIntroState() {
 
 function centerExhibits() {
   const translate_x = -1 * (total_width / 2.0);
-  translate(translate_x, 0, hover_y);
+  translate(translate_x, hover_y, 0);
 }
 
 function drawExhibits() {
