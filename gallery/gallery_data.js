@@ -36,7 +36,7 @@ function preload_gallery() {
   cartridge = loadModel('models/cartridge.obj');
   // Effects preload
   page_offset = canvas_width / 3;
-  box_size = canvas_height / 10;
+  box_size = canvas_height / 5;
   box_spacing = box_size;
   hover_y = canvas_height / 2;
   hover_amplitude = box_size;
