@@ -30,8 +30,8 @@ let ambient_color;
 
 function preload_gallery() {
   // Application preload
-  canvas_width = displayWidth;
-  canvas_height = displayHeight;
+  canvas_width = windowWidth;
+  canvas_height = windowHeight;
   // Resources preload
   cartridge = loadModel('models/cartridge.obj');
   // Effects preload
