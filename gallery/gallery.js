@@ -82,7 +82,7 @@ function drawCartridge(wave_offset) {
   fill(95, 95, 120);
   shininess(3); // 5
   model(cartridge);
-  box_scale(64);
+  box(64);
   translate(0, sin(wave_offset * -10 + sin_offset), 0);
 }
 
