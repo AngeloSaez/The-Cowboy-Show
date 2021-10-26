@@ -47,7 +47,7 @@ function drawIntroState() {
   background(40);
   noStroke();
   ambientLight(ambient_color);
-  pointLight(100, 50, 108, 2 * box_size, 0, 10000);
+  pointLight(100, 50, 108, 80, 0, 10000);
   // Exhibits
   centerExhibits();
   drawExhibits();
@@ -78,10 +78,12 @@ function drawCartridge(wave_offset) {
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
   translate(0, sin(wave_offset * 10 + sin_offset), 0);
+  scale(box_scale);
   specularMaterial(500);
   fill(95, 95, 120);
   shininess(3); // 5
   model(cartridge);
+  scale(1.0);
   translate(0, sin(wave_offset * -10 + sin_offset), 0);
 }
 

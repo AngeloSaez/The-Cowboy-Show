@@ -14,8 +14,8 @@ let cartridge;
 // Effects
 const row_width = 4;
 let page_offset; // 128
-let box_size; // 16
 let box_spacing; // 16
+let box_scale;
 let hover_y; // 180
 let hover_amplitude; // 16
 const hover_period_in_frames = 300;
@@ -36,8 +36,8 @@ function preload_gallery() {
   cartridge = loadModel('models/cartridge.obj');
   // Effects preload
   page_offset = canvas_width / 3;
-  box_size = 32;
-  box_spacing = box_size / 4;
+  box_spacing = 16;
+  box_scale = 1.75;
   hover_y = canvas_height / 2;
   hover_amplitude = box_size;
   entry_width = box_size + box_spacing;
