@@ -12,7 +12,7 @@ let cartridge;
 
 ////////////////////////////////////////////////////////////
 // Effects
-const row_width = 4;
+const row_width = 1;
 let page_offset; // 128
 let box_spacing; // 16
 let box_scale;
