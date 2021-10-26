@@ -33,7 +33,7 @@ function preload_gallery() {
   canvas_height = windowHeight;
   // Resources preload
   cartridge = loadModel('models/cartridge.obj');
-  sticker = loadModel('models/cartridge.obj');
+  sticker = loadModel('models/sticker.obj');
   sticker_image_default = loadImage('stickers/default_sticker.png');
   // Effects preloaddfddd
   page_offset = canvas_width / 3;
