@@ -60,8 +60,8 @@ function drawCartridge(wave_offset) {
   const desired_cartridge_size = p5js_cartridge_size * box_scale;
   let translation_x = -1 * desired_cartridge_size / 2;
   // create model
-  translate(translation_x, translation_y, 0);
   scale(box_scale);
+  translate(translation_x, translation_y, 0);
   model(cartridge);
   // reset transform
   translate(-translation_x, -translation_y, 0);
