@@ -66,9 +66,13 @@ function drawCartridge(wave_offset) {
   model(cartridge);
   // sticker
   push();
-  textureWrap(CLAMP);
   texture(sticker_image_default);
-  model(sticker);
+  beginShape(QUADS);
+  vertex(-8.597882, -13.768604);
+  vertex(-8.597882, -4.343153);
+  vertex( 8.597882, -4.343153);
+  vertex( 8.597882, -13.768604);
+  endShape();
   pop();
   // reset transform
   translate(-translation_x, -translation_y, 0);
