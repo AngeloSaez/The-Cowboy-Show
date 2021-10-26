@@ -63,7 +63,7 @@ function drawExhibits() {
     // Calculate Z offset 
     let mouse_proximity = calculateMouseProximity(i);
     // let z_off = calculateExhibitZ(mouse_proximity);
-    let z_off = 64;
+    let z_off = 48;
     translate(0, 0, z_off);
     // Draw cartridge
     drawCartridge(i);
