@@ -33,7 +33,7 @@ function preload_gallery() {
   cartridge = loadModel('models/cartridge.obj');
   // Effects preload
   page_offset = canvas_width / 3;
-  box_scale = 8.0;
+  box_scale = 10.0;
   hover_amplitude = 80;
   ambient_color = color(202, 253, 253);
 }
