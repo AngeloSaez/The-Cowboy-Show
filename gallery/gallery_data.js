@@ -18,7 +18,6 @@ let box_spacing; // 16
 let box_scale;
 let hover_amplitude; // 16
 const hover_period_in_frames = 300;
-let entry_width, total_width;
 
 ////////////////////////////////////////////////////////////
 // Colors
@@ -38,7 +37,5 @@ function preload_gallery() {
   box_spacing = 16;
   box_scale = 16.0;
   hover_amplitude = 48;
-  entry_width = hover_amplitude + box_spacing;
-  total_width = (row_width - 1) * entry_width;
   ambient_color = color(202, 253, 253);
 }
