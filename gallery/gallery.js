@@ -27,10 +27,10 @@ function draw() {
 // Intro State
 function calculateMouseProximity(index) {
   var cartridges_x = [];
-  var cartridges_y = hover_y;
+  var cartridges_y = 0;
   var anchor_x = (-1 * total_width / 2.0) * entry_width;
   var dx = Math.abs(anchor_x - mouseX);
-  var dy = Math.abs(hover_y - mouseY);
+  var dy = Math.abs(0 - mouseY);
   return Math.sqrt( dx * dx + dy * dy);
 }
 
@@ -55,7 +55,7 @@ function drawIntroState() {
 
 function centerExhibits() {
   const translate_x = -1 * (total_width / 2.0);
-  translate(translate_x, hover_y, 0);
+  translate(translate_x, 0, 0);
 }
 
 function drawExhibits() {

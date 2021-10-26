@@ -16,7 +16,6 @@ const row_width = 4;
 let page_offset; // 128
 let box_spacing; // 16
 let box_scale;
-let hover_y; // 180
 let hover_amplitude; // 16
 const hover_period_in_frames = 300;
 let entry_width, total_width;
@@ -38,7 +37,6 @@ function preload_gallery() {
   page_offset = canvas_width / 3;
   box_spacing = 16;
   box_scale = 1.0;
-  hover_y = canvas_height / 2;
   hover_amplitude = 48;
   entry_width = hover_amplitude + box_spacing;
   total_width = (row_width - 1) * entry_width;
