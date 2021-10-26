@@ -35,7 +35,7 @@ function calculateMouseProximity(index) {
 }
 
 function calculateExhibitZ(mouse_prox) {
-  let max_z = 40;
+  let max_z = 30;
   let radius = box_size;
   let ratio = min(radius, mouse_prox) / radius;
   let result = ratio * max_z;
@@ -62,7 +62,8 @@ function drawExhibits() {
   for (var i = 0; i < project_count; i++) {
     // Calculate Z offset 
     let mouse_proximity = calculateMouseProximity(i);
-    let z_off = calculateExhibitZ(mouse_proximity);
+    // let z_off = calculateExhibitZ(mouse_proximity);
+    let z_off = 64;
     translate(0, 0, z_off);
     // Draw cartridge
     drawCartridge(i);
