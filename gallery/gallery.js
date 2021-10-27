@@ -65,9 +65,11 @@ function drawCartridge(wave_offset) {
   scale(box_scale);
   model(cartridge);
   // sticker
+  const sticker_yoff = 4;
+  translate(0, sticker_yoff, 0);
   texture(sticker_image_default);
-  box(box_scale, box_scale * 0.733);
-  rotate(0, 0.2, 0);
+  box(box_scale * 2, box_scale * 0.733 * 2);
+  translate(0, -sticker_yoff, 0);
   // reset transform
   translate(-translation_x, -translation_y, 0);
   scale(1.0);
