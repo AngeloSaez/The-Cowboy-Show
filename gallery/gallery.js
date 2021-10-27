@@ -63,10 +63,15 @@ function drawCartridge(wave_offset) {
   // create model
   translate(translation_x, translation_y, 0);
   scale(box_scale);
-  model(cartridge);
+  // model(cartridge);
   // sticker
   texture(sticker_image_default);
-  model(sticker);
+  beginShape(QUADS);
+  vertex(0, 4);
+  vertex(0, 12);
+  vertex(16, 12);
+  vertex(16, 4);
+  endShape();
   // reset transform
   translate(-translation_x, -translation_y, 0);
   scale(1.0);
