@@ -35,6 +35,7 @@ function preload_gallery() {
   cartridge = loadModel('models/cartridge.obj');
   sticker = loadModel('models/sticker.obj');
   sticker_image_default = loadImage('stickers/default_sticker.png');
+  sticker_image_default.setInterpolation(NEAREST, NEAREST);
   // Effects preloaddfddd
   page_offset = canvas_width / 3;
   box_scale = 10.0;
