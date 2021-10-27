@@ -61,7 +61,7 @@ function drawCartridge(wave_offset) {
   var translation_x = desired_cartridge_size * -0.5;
   translation_x = 0;
   // create model
-  rotate(0.000002);
+  rotate(0.0002);
   translate(translation_x, translation_y, 0);
   scale(box_scale);
   model(cartridge);
@@ -74,7 +74,7 @@ function drawCartridge(wave_offset) {
   // reset transform
   translate(-translation_x, -translation_y, 0);
   scale(1.0);
-  rotate(-0.000002);
+  rotate(-0.0002);
 }
 
 
