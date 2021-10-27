@@ -66,6 +66,7 @@ function drawCartridge(wave_offset) {
   model(cartridge);
   // sticker
   texture(sticker_image_default);
+  model(sticker);
   // reset transform
   translate(-translation_x, -translation_y, 0);
   scale(1.0);
