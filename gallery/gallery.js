@@ -67,10 +67,10 @@ function drawCartridge(wave_offset) {
   // sticker
   texture(sticker_image_default);
   beginShape(QUADS);
-  vertex(0, 4);
-  vertex(0, 12);
-  vertex(16, 12);
-  vertex(16, 4);
+  vertex(0, 40);
+  vertex(0, 120);
+  vertex(160, 120);
+  vertex(160, 40);
   endShape();
   // reset transform
   translate(-translation_x, -translation_y, 0);
