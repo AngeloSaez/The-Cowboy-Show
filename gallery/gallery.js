@@ -34,10 +34,10 @@ function drawIntroState() {
   noStroke();
   ambientLight(cartridge_color);
   pointLight(136, 111, 171, locX, locY, point_light_z);
+  // Camera zoom out
+  translate(0, 0, -100);
   // Exhibits
   drawAllExhibits();
-  // Camera zoom out
-  translate(0, 0, -150);
 }
 
 function drawAllExhibits() {
@@ -77,7 +77,7 @@ function drawSticker() {
   const width = 0.733 * p5js_scale;
   const depth = (0.162 + 0.001) * p5js_scale;
   // gloss
-  specularMaterial(250, 250, 250, 250);
+  specularMaterial(80, 80, 80, 100);
   shininess(1);
   box(width + 0.1, height + 0.1, depth + 0.1);
   // sticker
