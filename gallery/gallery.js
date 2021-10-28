@@ -53,26 +53,28 @@ function setupCartridgeMaterial() {
 function drawExhibit(wave_offset) {
   // largen models
   scale(256.0);
-  // create model
-  // drawCartridge(wave_offset);
-  // sticker
-  drawSticker();
-  // reset scale
-  scale(1.0);
-}
-
-function drawCartridge(wave_offset) {
+  // calculate y position and translate
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
-  let translation_y = sin(wave_offset * 10 + sin_offset); // 10 frame offset
-  translate(0, translation_y, 0);
+  let y_off = sin(wave_offset * 10 + sin_offset); // 10 frame offset
+  translate(0, y_off, 0);
+  // create models
+  drawCartridge(y_off);
+  drawSticker(y_off);
+  // reset
+  scale(1.0);
+  translate(0, -y_off, 0);
+}
+
+function drawCartridge(y_off) {
   model(cartridge);
 }
 
 function drawSticker() {
-  const height = 0.402;
-  const width = 0.733;
-  const depth = (0.162 + 0.001);
+  const p5js_scale = 1.0;
+  const height = 0.402 * p5js_scale;
+  const width = 0.733 * p5js_scale;
+  const depth = (0.162 + 0.001) * p5js_scale;
   texture(sticker_image_default);
   box(width, height, depth);
 }
