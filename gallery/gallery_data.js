@@ -15,7 +15,6 @@ let sticker_image_default;
 // Effects
 const row_width = 1;
 const hover_period_in_frames = 300;
-const camera_z_off = -3000;
 let page_offset; // 128
 
 ////////////////////////////////////////////////////////////

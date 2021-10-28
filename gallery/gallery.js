@@ -37,7 +37,7 @@ function drawIntroState() {
   // Exhibits
   drawAllExhibits();
   // Camera zoom out
-  translate(0, 0, camera_z_off);
+  translate(0, 0, -150);
 }
 
 function drawAllExhibits() {
@@ -79,10 +79,10 @@ function drawSticker() {
   // gloss
   specularMaterial(250, 250, 250, 250);
   shininess(1);
-  box(width, height, depth);
+  box(width + 0.1, height + 0.1, depth + 0.1);
   // sticker
   texture(sticker_image_default);
-  box(width + 0.1, height + 0.1, depth + 0.1);
+  box(width, height, depth);
 }
 
 
