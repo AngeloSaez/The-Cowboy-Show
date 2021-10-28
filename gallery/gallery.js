@@ -54,7 +54,7 @@ function drawExhibit(wave_offset) {
   // largen models
   scale(256.0);
   // create model
-  drawCartridge(wave_offset);
+  // drawCartridge(wave_offset);
   // sticker
   drawSticker();
   // reset scale
