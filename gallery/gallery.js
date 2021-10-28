@@ -27,11 +27,13 @@ function draw() {
 // Intro State
 
 function drawIntroState() {
+  let locX = mouseX - height / 2;
+  let locY = mouseY - width / 2;
   // Scenery
   background(40);
   noStroke();
-  ambientLight(ambient_color);
-  pointLight(100, 50, 108, 80, 0, 10000);
+  ambientLight(cartridge_color);
+  pointLight(136, 111, 171, locX, locY, point_light_z);
   // Exhibits
   drawAllExhibits();
 }
@@ -60,16 +62,15 @@ function drawExhibit(wave_offset) {
 
 function drawCartridge(y_off) {
   // material setup
-  specularMaterial(500);
-  fill(95, 95, 120);
-  shininess(3);
+  specularMaterial(100);
+  shininess(10);
   // draw
   model(cartridge);
 }
 
 function drawSticker() {
   // material setup
-  specularMaterial(500);
+  specularMaterial(180);
   shininess(1);
   // draw
   const p5js_scale = 2.0;

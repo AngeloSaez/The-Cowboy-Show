@@ -18,8 +18,10 @@ let page_offset; // 128
 const hover_period_in_frames = 300;
 
 ////////////////////////////////////////////////////////////
-// Colors
-let ambient_color;
+// Style
+let cartridge_color;
+let point_light_color;
+let point_light_z;
 
 ////////////////////////////////////////////////////////////
 // Setup function
@@ -33,5 +35,6 @@ function preload_gallery() {
   sticker_image_default = loadImage('stickers/default_sticker.png');
   // Effects preload
   page_offset = canvas_width / 3;
-  ambient_color = color(202, 253, 253);
+  cartridge_color = color(202, 253, 253);
+  point_light_z = 300;
 }
