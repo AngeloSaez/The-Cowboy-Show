@@ -9,14 +9,12 @@ const project_count = 1;
 ////////////////////////////////////////////////////////////
 // Resources
 let cartridge;
-let sticker;
 let sticker_image_default;
 
 ////////////////////////////////////////////////////////////
 // Effects
 const row_width = 1;
 let page_offset; // 128
-let box_scale;
 let hover_amplitude; // 16
 const hover_period_in_frames = 300;
 
@@ -32,12 +30,10 @@ function preload_gallery() {
   canvas_width = windowWidth;
   canvas_height = windowHeight;
   // Resources preload
-  cartridge = loadModel('models/cartridge.obj');
-  sticker = loadModel('models/sticker.obj');
+  cartridge = loadModel('models/cartridge.obj', true);
   sticker_image_default = loadImage('stickers/default_sticker.png');
   // Effects preload
   page_offset = canvas_width / 3;
-  box_scale = 10.0;
   hover_amplitude = 80;
   ambient_color = color(202, 253, 253);
 }
