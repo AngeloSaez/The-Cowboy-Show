@@ -24,6 +24,7 @@ const point_light_z = 300;
 let cartridge_color;
 let point_light_color;
 
+
 ////////////////////////////////////////////////////////////
 // Setup function
 

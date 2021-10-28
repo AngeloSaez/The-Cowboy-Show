@@ -70,16 +70,18 @@ function drawCartridge(y_off) {
 }
 
 function drawSticker() {
-  // material setup
-  texture(sticker_image_default);
-  specularMaterial(180);
-  shininess(1);
-  // draw
+  // calculate dimensions
   const p5js_scale = 2.0;
   const height = 0.402 * p5js_scale;
   const width = 0.733 * p5js_scale;
   const depth = (0.162 + 0.001) * p5js_scale;
+  // gloss
+  specularMaterial(250, 250, 250, 100);
+  shininess(1);
   box(width, height, depth);
+  // sticker
+  texture(sticker_image_default);
+  box(width + 0.1, height + 0.1, depth + 0.1);
 }
 
 
