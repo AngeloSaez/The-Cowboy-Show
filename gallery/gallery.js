@@ -34,6 +34,7 @@ function drawIntroState() {
   noStroke();
   ambientLight(cartridge_color);
   pointLight(136, 111, 171, locX, locY, point_light_z);
+  translate(0, 0, camera_z_off);
   // Exhibits
   drawAllExhibits();
 }
@@ -70,6 +71,7 @@ function drawCartridge(y_off) {
 
 function drawSticker() {
   // material setup
+  texture(sticker_image_default);
   specularMaterial(180);
   shininess(1);
   // draw
@@ -77,7 +79,6 @@ function drawSticker() {
   const height = 0.402 * p5js_scale;
   const width = 0.733 * p5js_scale;
   const depth = (0.162 + 0.001) * p5js_scale;
-  texture(sticker_image_default);
   box(width, height, depth);
 }
 
