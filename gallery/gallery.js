@@ -35,7 +35,7 @@ function drawIntroState() {
   ambientLight(cartridge_color);
   pointLight(136, 111, 171, locX, locY, point_light_z);
   // Camera zoom out
-  translate(0, 0, -100);
+  translate(0, 0, -300);
   // Exhibits
   drawAllExhibits();
 }
