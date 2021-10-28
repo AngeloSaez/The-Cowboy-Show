@@ -79,7 +79,7 @@ function drawSticker() {
   // gloss
   specularMaterial(120, 120, 120, 5);
   shininess(1);
-  box(width + 0.5, height + 0.5, depth + 0.5);
+  // box(width + 0.5, height + 0.5, depth + 0.5);
   // sticker
   texture(sticker_image_default);
   box(width, height, depth);
