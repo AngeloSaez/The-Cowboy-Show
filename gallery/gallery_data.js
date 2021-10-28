@@ -35,7 +35,7 @@ function preload_gallery() {
   cartridge = loadModel('models/cartridge.obj');
   sticker = loadModel('models/sticker.obj');
   sticker_image_default = loadImage('stickers/default_sticker.png');
-  // Effects preloaddfddd
+  // Effects preload
   page_offset = canvas_width / 3;
   box_scale = 10.0;
   hover_amplitude = 80;
