@@ -49,7 +49,7 @@ function drawExhibit(wave_offset) {
   // calculate y position and translate
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
-  let y_off = sin(wave_offset * 10 + sin_offset) * 0.25; // 10 frame offset, other float is scale
+  let y_off = sin(wave_offset * 10 + sin_offset); // 10 frame offset, other float is scale
   translate(0, y_off, 0);
   // create models
   drawCartridge(y_off);
