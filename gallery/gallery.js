@@ -51,26 +51,28 @@ function setupCartridgeMaterial() {
 }
 
 function drawExhibit(wave_offset) {
+  // largen models
+  scale(256.0);
   // create model
   drawCartridge(wave_offset);
   // sticker
   drawSticker();
+  // reset scale
+  scale(1.0);
 }
 
 function drawCartridge(wave_offset) {
-  // oscillation
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
   let translation_y = sin(wave_offset * 10 + sin_offset); // 10 frame offset
-  // cartridge
   translate(0, translation_y, 0);
   model(cartridge);
 }
 
 function drawSticker() {
-  const height = box_scale * 0.402;
-  const width = box_scale * 0.733;
-  const depth = box_scale * (0.162 + 0.001);
+  const height = 0.402;
+  const width = 0.733;
+  const depth = (0.162 + 0.001);
   texture(sticker_image_default);
   box(width, height, depth);
 }
