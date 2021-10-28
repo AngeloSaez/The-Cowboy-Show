@@ -40,14 +40,7 @@ function drawAllExhibits() {
   setupCartridgeMaterial();
   for (var i = 0; i < project_count; i++) {
     drawExhibit(i);
-    // translate(page_offset, 0, 0);
   }
-}
-
-function setupCartridgeMaterial() {
-  specularMaterial(500);
-  fill(95, 95, 120);
-  shininess(3); // 5
 }
 
 function drawExhibit(wave_offset) {
@@ -56,7 +49,7 @@ function drawExhibit(wave_offset) {
   // calculate y position and translate
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
-  let y_off = sin(wave_offset * 10 + sin_offset); // 10 frame offset
+  let y_off = sin(wave_offset * 10 + sin_offset) * 0.25; // 10 frame offset, other float is scale
   translate(0, y_off, 0);
   // create models
   drawCartridge(y_off);
@@ -67,10 +60,19 @@ function drawExhibit(wave_offset) {
 }
 
 function drawCartridge(y_off) {
+  // material setup
+  specularMaterial(500);
+  fill(95, 95, 120);
+  shininess(3);
+  // draw
   model(cartridge);
 }
 
 function drawSticker() {
+  // material setup
+  specularMaterial(500);
+  shininess(15);
+  // draw
   const p5js_scale = 2.0;
   const height = 0.402 * p5js_scale;
   const width = 0.733 * p5js_scale;
