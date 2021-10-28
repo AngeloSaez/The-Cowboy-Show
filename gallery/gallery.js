@@ -55,7 +55,7 @@ function drawExhibit(wave_offset) {
   let y_off = sin(wave_offset * 10 + sin_offset) * 0.125; // 10 frame offset, other float is scale
   translate(0, y_off, 0);
   // create models
-  // drawCartridge(y_off);
+  drawCartridge(y_off);
   drawSticker(y_off);
   // reset
   scale(1.0);
@@ -80,9 +80,9 @@ function drawSticker() {
   texture(sticker_image_default);
   box(width, height, depth);
   // gloss
-  specularMaterial(250, 250, 250, 5);
+  specularMaterial(250, 250, 250, 90);
   shininess(1);
-  box(height + 0.5, width + 0.5, depth + 0.5);
+  box(width + 0.5, height + 0.5, depth + 0.5);
 }
 
 
