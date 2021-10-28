@@ -82,7 +82,7 @@ function drawSticker() {
   // gloss
   specularMaterial(250, 250, 250, 90);
   shininess(1);
-  box(width + 0.5, height + 0.5, depth + 0.5);
+  box(width + 0.001, height + 0.001, depth + 0.001);
 }
 
 
