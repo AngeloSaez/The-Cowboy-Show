@@ -76,13 +76,13 @@ function drawSticker() {
   const height = 0.402 * p5js_scale;
   const width = 0.733 * p5js_scale;
   const depth = (0.162 + 0.001) * p5js_scale;
+  // sticker
+  texture(sticker_image_default);
+  box(width, height, depth);
   // gloss
   specularMaterial(250, 250, 250, 5);
   shininess(1);
   box(height + 0.5, width + 0.5, depth + 0.5);
-  // sticker
-  texture(sticker_image_default);
-  box(width, height, depth);
 }
 
 
