@@ -51,8 +51,8 @@ function setupCartridgeMaterial() {
 }
 
 function drawExhibit(wave_offset) {
-  // largen models
-  scale(256.0);
+  // enlargen models
+  // scale(256.0);
   // calculate y position and translate
   const time_ratio = (frameCount % hover_period_in_frames) / hover_period_in_frames;
   const sin_offset = time_ratio * 2 * PI;
@@ -62,7 +62,7 @@ function drawExhibit(wave_offset) {
   drawCartridge(y_off);
   drawSticker(y_off);
   // reset
-  scale(1.0);
+  // scale(1.0);
   translate(0, -y_off, 0);
 }
 

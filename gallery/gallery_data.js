@@ -34,6 +34,6 @@ function preload_gallery() {
   sticker_image_default = loadImage('stickers/default_sticker.png');
   // Effects preload
   page_offset = canvas_width / 3;
-  hover_amplitude = 80;
+  hover_amplitude = 30;
   ambient_color = color(202, 253, 253);
 }
