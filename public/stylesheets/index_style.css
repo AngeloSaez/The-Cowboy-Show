@@ -28,7 +28,6 @@ nav {
 #tab-welcome-back {
   background-color: #a37124;
   border-radius: 25px 0px 0px 0px;
-
 }
  
 #tab-welcome-front {
@@ -46,6 +45,12 @@ nav {
 }
 
 /* FOLDER BODY */
+
+#mural {
+  background-image: url("../images/bg.png");
+  width: 100%;
+  height: auto;
+}
 
 /* latin */
 @font-face {
