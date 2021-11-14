@@ -1,4 +1,5 @@
 body {
+  /* RESET */
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,7 +9,12 @@ body {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
+  /* CUSTOM */
+  padding: 15px;
+  background-color: #eec889;
 }
+
+/* FOLDER HEADER */
 
 nav {
   box-sizing: border-box;
@@ -16,17 +22,13 @@ nav {
   width: 50%;
   font-family: 'Arvo';
   text-align: center;
-}
- 
-#tab-portfolio-front {
-  border-radius: 0px 25px 0px 0px;
-  color: #593300;
-  background-color: #a37124;
-  padding: 20px;
+  background-color: #eec889;
 }
  
 #tab-welcome-back {
   background-color: #a37124;
+  border-radius: 25px 0px 0px 0px;
+
 }
  
 #tab-welcome-front {
@@ -35,6 +37,15 @@ nav {
   background-color: #593300;
   padding: 20px;
 }
+
+#tab-portfolio-front {
+  border-radius: 0px 25px 0px 0px;
+  color: #593300;
+  background-color: #a37124;
+  padding: 20px;
+}
+
+/* FOLDER BODY */
 
 /* latin */
 @font-face {
