@@ -11,22 +11,25 @@ body {
 }
 
 nav {
-  box-sizing: border-box;
-  float:left;
-  width: 50%;
-  padding: 20px;
-  text-align: center;
-  border-radius: 25px 25px 0px 0px;
-  color: #593300;
-  background: #a37124;
-  font-family: 'Arvo';
+ box-sizing: border-box;
+ float:left;
+ width: 50%;
+ font-family: 'Arvo';
+ padding: 20px;
+ text-align: center;
+}
+
+#tab-portfolio {
+ border-radius: 25px 25px 0px 0px;
+ color: #593300;
+ background-color: #a37124;
 }
 
 #tab-welcome {
-  color: #a37124;
-  background: #593300;
+ border-radius: 25px 25px 0px 0px;
+ color: #a37124;
+ background-color: #593300;
 }
-
 
 /* latin */
 @font-face {
