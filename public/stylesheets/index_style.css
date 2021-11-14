@@ -45,16 +45,17 @@ nav {
 }
 
 /* FOLDER BODY */
-
 article {
   padding: 10px;
   background-color: #593300;
+  height: max-content;
 }
 
 #mural {
   background-image: url("../images/bg.png");
   width: 100%;
-  height: 100px;
+  height: 42vw;
+  background-size: cover;
 }
 
 /* latin */
