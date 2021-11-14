@@ -11,24 +11,29 @@ body {
 }
 
 nav {
- box-sizing: border-box;
- float:left;
- width: 50%;
- font-family: 'Arvo';
- padding: 20px;
- text-align: center;
+  box-sizing: border-box;
+  float:left;
+  width: 50%;
+  font-family: 'Arvo';
+  text-align: center;
 }
-
-#tab-portfolio {
- border-radius: 25px 25px 0px 0px;
- color: #593300;
- background-color: #a37124;
+ 
+#tab-portfolio-front {
+  border-radius: 0px 25px 0px 0px;
+  color: #593300;
+  background-color: #a37124;
+  padding: 20px;
 }
-
-#tab-welcome {
- border-radius: 25px 25px 0px 0px;
- color: #a37124;
- background-color: #593300;
+ 
+#tab-welcome-back {
+  background-color: #a37124;
+}
+ 
+#tab-welcome-front {
+  border-radius: 25px 25px 0px 0px;
+  color: #a37124;
+  background-color: #593300;
+  padding: 20px;
 }
 
 /* latin */
