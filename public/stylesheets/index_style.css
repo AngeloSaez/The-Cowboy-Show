@@ -46,10 +46,15 @@ nav {
 
 /* FOLDER BODY */
 
+article {
+  padding: 10px;
+  background-color: #593300;
+}
+
 #mural {
   background-image: url("../images/bg.png");
   width: 100%;
-  height: auto;
+  height: 100px;
 }
 
 /* latin */
