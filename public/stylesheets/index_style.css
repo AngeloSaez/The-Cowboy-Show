@@ -16,8 +16,17 @@ nav {
   width: 50%;
   padding: 20px;
   text-align: center;
-  background: #ccc;
+  border-radius: 25px 25px 0px 0px;
+  color: #593300;
+  background: #a37124;
+  font-family: 'Arvo';
 }
+
+#tab-welcome {
+  color: #a37124;
+  background: #593300;
+}
+
 
 /* latin */
 @font-face {
