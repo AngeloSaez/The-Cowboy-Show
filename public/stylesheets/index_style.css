@@ -10,7 +10,7 @@ body {
   font-family: inherit;
   vertical-align: baseline;
   /* CUSTOM */
-  padding: 50px;
+  padding: 10vw;
   padding-top: 30px;
   background-color: #eec889;
 }
@@ -59,7 +59,7 @@ article {
 #article-front {
   border-radius: 0px 10px 10px 10px;
   background-color: #593300;
-  padding: 35px 5vw 35px 5vw;
+  padding: 2vw 5vw 4vw 5vw;
   
 }
 
