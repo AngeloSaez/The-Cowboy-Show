@@ -10,7 +10,8 @@ body {
   font-family: inherit;
   vertical-align: baseline;
   /* CUSTOM */
-  padding: 15px;
+  padding: 50px;
+  padding-top: 30px;
   background-color: #eec889;
 }
 
@@ -20,11 +21,8 @@ nav {
   box-sizing: border-box;
   float:left;
   width: 50%;
-  font-family: 'Suez One';
-  font-size: 20px;
   text-align: center;
   background-color: #eec889;
-  line-height: 0;
 }
  
 #tab-welcome-back {
@@ -50,6 +48,7 @@ nav {
 article {
   float: left;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 #article-back {
@@ -60,27 +59,41 @@ article {
 #article-front {
   border-radius: 0px 10px 10px 10px;
   background-color: #593300;
-  padding: 35px 15px 0px 15px;
+  padding: 35px 5vw 0px 5vw;
+  
 }
 
 #mural {
   background-image: url("../images/bg.png");
   background-size: cover;
-  height: 42vw;
+  height: 32vw;
   border-style: solid;
+  border-width: 0.5vw;
   border-color: #a37124;;
+}
+
+h2 {
+  font-family: 'Suez One';
+  font-size: 60px;
+  line-height: 0;
+  padding: 0;
 }
 
 h1 {
   color: #a37124;
   font-family: 'Arvo';
-  font-size: 20px;
+  font-size: 24px;
+  margin-left: 25px;
+  margin-bottom: 0px;
 }
 
 p {
   color: #eec889;
   font-family: 'Open Sans';
   font-size: 20px;
+  margin-left: 50px;
+  margin-right: 25px;
+  margin-bottom: 0px;
 }
 
 
