@@ -20,7 +20,8 @@ nav {
   box-sizing: border-box;
   float:left;
   width: 50%;
-  font-family: 'Arvo';
+  font-family: 'Suez One';
+  font-size: 34px;
   text-align: center;
   background-color: #eec889;
 }
@@ -31,17 +32,19 @@ nav {
 }
  
 #tab-welcome-front {
+  line-height: 0;
   border-radius: 25px 25px 0px 0px;
   color: #a37124;
   background-color: #593300;
-  padding: 20px;
+  padding: 2px;
 }
 
 #tab-portfolio-front {
+  line-height: 0;
   border-radius: 0px 25px 0px 0px;
   color: #593300;
   background-color: #a37124;
-  padding: 20px;
+  padding: 2px;
 }
 
 /* FOLDER BODY */
