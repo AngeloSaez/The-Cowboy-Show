@@ -21,9 +21,10 @@ nav {
   float:left;
   width: 50%;
   font-family: 'Suez One';
-  font-size: 34px;
+  font-size: 20px;
   text-align: center;
   background-color: #eec889;
+  line-height: 0;
 }
  
 #tab-welcome-back {
@@ -32,19 +33,17 @@ nav {
 }
  
 #tab-welcome-front {
-  line-height: 0;
   border-radius: 25px 25px 0px 0px;
   color: #a37124;
   background-color: #593300;
-  padding: 2px;
+  padding: 1px;
 }
 
 #tab-portfolio-front {
-  line-height: 0;
   border-radius: 0px 25px 0px 0px;
   color: #593300;
   background-color: #a37124;
-  padding: 2px;
+  padding: 1px;
 }
 
 /* FOLDER BODY */
@@ -70,6 +69,18 @@ article {
   height: 42vw;
   border-style: solid;
   border-color: #a37124;;
+}
+
+h1 {
+  color: #a37124;
+  font-family: 'Arvo';
+  font-size: 20px;
+}
+
+p {
+  color: #eec889;
+  font-family: 'Open Sans';
+  font-size: 20px;
 }
 
 
