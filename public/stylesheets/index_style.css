@@ -46,17 +46,29 @@ nav {
 
 /* FOLDER BODY */
 article {
-  padding: 10px;
-  background-color: #593300;
+  float: left;
   height: max-content;
+}
+
+#article-back {
+  border-radius: 0px 0px 10px 10px;
+  background-color: #a37124;
+}
+
+#article-front {
+  border-radius: 0px 10px 10px 10px;
+  background-color: #593300;
+  padding: 35px 15px 0px 15px;
 }
 
 #mural {
   background-image: url("../images/bg.png");
-  width: 100%;
-  height: 42vw;
   background-size: cover;
+  height: 42vw;
+  border-style: solid;
+  border-color: #a37124;;
 }
+
 
 /* latin */
 @font-face {
