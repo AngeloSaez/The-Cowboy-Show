@@ -96,6 +96,20 @@ p {
   margin-bottom: 0px;
 }
 
+#bottom-button {
+  color: #e2c86e;
+  background-color: #897d32;
+  border-radius: 8px;
+  border-color: #e2c86e;
+  padding: 20px 48px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Arvo';
+  margin-top: 30px;
+  margin-bottom: 0px;
+  transform: translateX(45%);
+}
+
 
 /* latin */
 @font-face {
