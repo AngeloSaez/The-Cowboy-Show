@@ -46,7 +46,6 @@ nav {
 
 /* FOLDER BODY */
 article {
-  float: left;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -63,25 +62,12 @@ article {
   
 }
 
-.project-header {
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #593300;
-  background-color: #593300;
-  color: #a37124;
+/* PROJECTS */
 
-  margin-bottom: 2vh;
-  margin-top: 2vh;
-  padding-bottom: 0;
+.body-section {
+  border-style: solid;
 }
 
-.project-body {
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #593300;
-  background-color: #a37124;
-  margin: 0;
-}
 
 h2 {
   font-family: 'Suez One';
@@ -91,21 +77,17 @@ h2 {
 }
 
 h1 {
-  color: #a37124;
+  color: #593300;
   font-family: 'Arvo';
   font-size: 24px;
-  margin-left: 15px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 p {
-  color: #eec889;
+  color: #593300;
   font-family: 'Open Sans';
   font-size: 20px;
-  margin-left: 15px;
-  margin-right: 25px;
-  margin-bottom: 0px;
-  margin-top: 0;
+  margin: 0;
 }
 
 /* latin */
