@@ -60,6 +60,11 @@ nav {
   float: left;
 }
 
+.description {
+  border-style: solid;
+  margin: 0;
+  float: left;
+}
 
 h1 {
   font-family: 'Suez One';
