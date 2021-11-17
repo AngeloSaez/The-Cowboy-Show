@@ -25,20 +25,20 @@ nav {
   background-color: #eec889;
 }
  
-#tab-welcome-back {
-  background-color: #a37124;
+#tab-welcome {
   border-radius: 25px 0px 0px 0px;
-}
- 
-#tab-welcome-front {
-  border-radius: 25px 25px 0px 0px;
   color: #a37124;
   background-color: #593300;
   padding: 1px;
 }
 
-#tab-portfolio-front {
+#tab-portfolio-back {
   border-radius: 0px 25px 0px 0px;
+  background-color: #593300;
+}
+
+#tab-portfolio-front {
+  border-radius: 25px 25px 0px 0px;
   color: #593300;
   background-color: #a37124;
   padding: 1px;
@@ -53,14 +53,23 @@ article {
 
 #article-back {
   border-radius: 0px 0px 10px 10px;
-  background-color: #a37124;
+  background-color: #593300;
 }
 
 #article-front {
-  border-radius: 0px 10px 10px 10px;
-  background-color: #593300;
+  border-radius: 10px 0px 10px 10px;
+  background-color: #a37124;
   padding: 2vw 5vw 4vw 5vw;
   
+}
+
+.project {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #593300;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 h2 {
@@ -71,10 +80,10 @@ h2 {
 }
 
 h1 {
-  color: #a37124;
+  color: #593300;
   font-family: 'Arvo';
   font-size: 24px;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-bottom: 0px;
 }
 
@@ -82,9 +91,10 @@ p {
   color: #eec889;
   font-family: 'Open Sans';
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 15px;
   margin-right: 25px;
   margin-bottom: 0px;
+  margin-top: 0;
 }
 
 /* latin */
