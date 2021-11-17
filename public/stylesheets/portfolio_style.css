@@ -63,13 +63,24 @@ article {
   
 }
 
+.project-header {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #593300;
+  background-color: #593300;
+  color: #a37124;
+
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  padding-bottom: 0;
+}
+
 .project-body {
   border-radius: 5px;
   border-style: solid;
   border-color: #593300;
-  margin-bottom: 2vh;
-  margin-top: 2vh;
-  padding-bottom: 2vh;
+  background-color: #a37124;
+  margin: 0;
 }
 
 h2 {
@@ -80,7 +91,7 @@ h2 {
 }
 
 h1 {
-  color: #593300;
+  color: #a37124;
   font-family: 'Arvo';
   font-size: 24px;
   margin-left: 15px;
