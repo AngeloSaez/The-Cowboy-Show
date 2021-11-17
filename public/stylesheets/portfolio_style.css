@@ -53,34 +53,46 @@ article {
 #article-back {
   border-radius: 0px 0px 10px 10px;
   background-color: #593300;
+  float: left;
 }
 
 #article-front {
   border-radius: 10px 0px 10px 10px;
   background-color: #a37124;
-  padding: 2vw 5vw 4vw 5vw;
-  
+  padding: 0vw 5vw 0vw 5vw;
+  float: left;
 }
 
 /* PROJECTS */
 
 .body-section {
   border-style: solid;
+  margin: 0;
+  float: left;
 }
 
 
-h2 {
+h1 {
   font-family: 'Suez One';
   font-size: 6vw;
   line-height: 0;
   padding: 0;
 }
 
-h1 {
+h2 {
   color: #593300;
   font-family: 'Arvo';
   font-size: 24px;
   margin: 0;
+  float: left;
+}
+
+h3 {
+  color: #593300;
+  font-family: 'Arvo';
+  font-size: 24px;
+  margin: 0;
+  float: left;
 }
 
 p {
@@ -88,6 +100,7 @@ p {
   font-family: 'Open Sans';
   font-size: 20px;
   margin: 0;
+  float: left;
 }
 
 /* latin */
