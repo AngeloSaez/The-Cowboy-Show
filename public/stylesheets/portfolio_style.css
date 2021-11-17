@@ -25,51 +25,55 @@ nav {
 }
  
 #tab-welcome {
+  background-color: #593300;
   border-radius: 25px 0px 0px 0px;
   color: #a37124;
-  background-color: #593300;
   padding: 1px;
 }
 
 #tab-portfolio-front {
+  background-color: #a37124;
   border-radius: 25px 25px 25px 25px;
   color: #593300;
-  background-color: #a37124;
   padding: 1px;
 }
 
 /* FOLDER BODY */
 #article-front {
-  border-radius: 10px 0px 10px 10px;
   background-color: #a37124;
-  padding: 0vw 5vw 0vw 5vw;
+  border-radius: 10px 0px 10px 10px;
   float: left;
+  padding: 0vw 5vw 0vw 5vw;
 }
 
 /* PROJECTS */
 
 .project {
   background-color: #d3a27d;
-  border-style: solid;
   border-color: #d3a27d;
   border-radius: 10px 10px 10px 10px;
-  margin: 4vh 10vw;
+  border-style: solid;
   float: left;
+  margin: 4vh 10vw;
 }
 
 .description-header {
   background-color: #593300;
-  border-top-style: solid;
   border-top-color: #d3a27d;
   border-radius: 10px 10px 10px 10px;
-  margin: 0;
+  border-top-style: solid;
   float: left;
+  margin: 0;
+  padding: 16px;
+  padding-top: 0;
 }
 
+/* latin */
 .description-content {
   float: left;
 }
 
+/* tab */
 h1 {
   font-family: 'Suez One';
   font-size: 5vw;
@@ -77,49 +81,52 @@ h1 {
   padding: 0;
 }
 
+/* project title */
 h2 {
   color: #593300;
+  float: left;
   font-family: 'Suez One';
   font-size: 30px;
   margin: 0;
   padding: 10px 25px;
-  float: left;
 }
 
+/* category */
 h3 {
   color: #c87d63;
+  float: right;
   font-family: 'Suez One';
   font-size: 30px;
   margin: 0;
   padding: 10px 25px;
-  float: right;
 }
 
+/* subtitle */
 h4 {
   color: #97633e;
+  float: left;
   font-family: 'Arvo';
   font-size: 20px;
   margin: 0;
-  padding: 10px 25px;
-  float: left;
+  padding-top: 16px;
 }
 
+/* season */
 h5 {
   color: #c87d63;
+  float: right;
   font-family: 'Arvo';
   font-size: 26px;
   margin: 0;
-  padding: 10px 25px;
-  float: right;
 }
 
+/* description paragraph */
 p {
   color: #d3a27d;
+  float: left;
   font-family: 'Open Sans';
   font-size: 20px;
   margin: 0;
-  padding: 10px 25px;
-  float: left;
 }
 
 /* latin */
