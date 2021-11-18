@@ -120,6 +120,15 @@ h5 {
   margin: 0;
 }
 
+h6 {
+  width: 100%;
+  float: left;
+  font-family: 'Suez One';
+  font-size: 5vw;
+  margin: 0;
+  margin-left: 10vw
+}
+
 /* description paragraph */
 p {
   color: #d3a27d;
@@ -127,6 +136,22 @@ p {
   font-family: 'Open Sans';
   font-size: 20px;
   margin: 0;
+}
+
+#curr {
+  color: #eea263
+}
+
+#quik {
+  color: #c8a289
+}
+
+#show {
+  color: #a3a263
+}
+
+#time {
+  color: #c87d63
 }
 
 /* latin */
