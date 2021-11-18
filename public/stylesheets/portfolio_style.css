@@ -126,7 +126,13 @@ h6 {
   font-family: 'Suez One';
   font-size: 5vw;
   margin: 0;
-  margin-left: 10vw
+  margin-left: 10vw;
+  margin-top: 30px;
+}
+
+#current-quote {
+  margin-left: 12vw;
+  font-size: 2.5vw;
 }
 
 /* description paragraph */
