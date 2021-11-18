@@ -57,6 +57,15 @@ nav {
   margin: 4vh 10vw;
 }
 
+.sc-project {
+  background-color: #c8bc6e;
+  border-color: #c8bc6e;
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  float: left;
+  margin: 4vh 10vw;
+}
+
 .description-header {
   background-color: #593300;
   border-top-color: #d3a27d;
@@ -68,8 +77,22 @@ nav {
   padding-top: 0;
 }
 
-/* latin */
+.sc-description-header {
+  background-color: #593300;
+  border-top-color: #c8bc6e;
+  border-radius: 10px 10px 10px 10px;
+  border-top-style: solid;
+  float: left;
+  margin: 0;
+  padding: 16px;
+  padding-top: 0;
+}
+
 .description-content {
+  float: left;
+}
+
+.sc-description-content {
   float: left;
 }
 
