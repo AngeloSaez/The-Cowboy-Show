@@ -124,7 +124,7 @@ h6 {
   width: 100%;
   float: left;
   font-family: 'Suez One';
-  font-size: 5vw;
+  font-size: 3vw;
   margin: 0;
   margin-left: 10vw;
   margin-top: 30px;
@@ -132,7 +132,7 @@ h6 {
 
 #current-quote {
   margin-left: 12vw;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
 }
 
 /* description paragraph */
