@@ -96,6 +96,18 @@ nav {
   float: left;
 }
 
+.sc-color1 {
+  color: #c8bc6e
+}
+
+.sc-color2 {
+  color: #7e6332
+}
+
+.sc-color3 {
+  color: #a3a263
+}
+
 /* tab */
 h1 {
   font-family: 'Suez One';
