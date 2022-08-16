@@ -53,11 +53,13 @@ body {
   border-color: #e2c86e;
   padding: 20px 48px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   font-family: 'Arvo';
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0px;
-  transform: translateX(45%);
+  
+   width: 66%; /* Can be in percentage also. */
+   position: relative;
 }
 
 h1 {
