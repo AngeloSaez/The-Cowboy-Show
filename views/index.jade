@@ -2,46 +2,18 @@ doctype html
 html
   head
     title The Cowboy Show
-    link(rel='stylesheet', href='/stylesheets/index_style.css')
+    link(rel='stylesheet' href='/stylesheets/index_style.css')
   body
-    section
-      nav
-        div(id='tab-welcome-back')
-          div(id='tab-welcome-front')
-            h1 [WELCOME]
-      nav
-        div(id='tab-portfolio')
-          h1(id='top-button', onclick="location.href='/portfolio'") [PORTFOLIO]
-      article 
-        div(id='article-back')
-          div(id='article-front')
-            div(id='mural')
-            div(id='folder-caption')
-              h2 MEET THE CREATOR. ~
-              p 
-                | My name is Angelo Saez and I am 
-                | one of the most creative computer science students you will meet.
-                | I am passionate for making art. I love to program, create art, 
-                | make music, come up with stories, and find ways to combine 
-                | all four of those. One of my favorite ways to combine all of 
-                | those is with game development, but this time... it's a website!
-              br
-              h2 WHAT IS THIS? ~
-              p 
-                | This is my portfolio site where my numerous projects will go. 
-                | Since I make projects in a ton of different mediums, a custom 
-                | website was the most logical way to present them in one place.
-              br
-              p And everyone has a portfolio site. But I'm not everyone.
-              br
-              p 
-                | So my portfolio site will SOMEDAY host countless hidden secrets to a 
-                | fictional TV show that I decided to call The Cowboy Show, where 
-                | the only way to find out about this show would be to dive into 
-                | the artistic overgrowth of my portfolio.
-              br
-              h2 WELL, SADDLE UP! ~
-              br
-              button.view-portfolio(id='bottom-button', onclick="location.href='/portfolio'") VIEW PORTFOLIO
-              br
-        br
+    #welcome
+      h2 MEET THE CREATOR. ~
+      p
+        | My name is Angelo Saez and I am a Computer Science student
+        | graduating from Stevens Institute of Technology as a part of the class of 2024.
+        | This is my personal website where I will stash my various projects
+        | and creative pursuits.
+      br
+      h2 WELL, SADDLE UP! ~
+      br
+      button#bottom-button.view-portfolio(onclick="location.href='/portfolio'") VIEW PORTFOLIO
+      br
+    img#portrait(src='../images/me.png')
