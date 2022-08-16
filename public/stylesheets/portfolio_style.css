@@ -46,20 +46,30 @@ nav {
   padding: 0vw 5vw 0vw 5vw;
 }
 
+/* SECTION TITLE */
+h6 {
+  width: 100%;
+  float: left;
+  font-family: 'Suez One';
+  font-size: 3vw;
+  margin: 0;
+  margin-left: 10vw;
+  margin-top: 30px;
+}
+
+/* LINKS */
+a { 
+  color: #d3bc89;
+  font-family: 'Arvo';
+  font-size: 22px;
+  margin-left: 30px;
+}
+
 /* PROJECTS */
 
 .project {
   background-color: #d3a27d;
   border-color: #d3a27d;
-  border-radius: 10px 10px 10px 10px;
-  border-style: solid;
-  float: left;
-  margin: 4vh 10vw;
-}
-
-.sc-project {
-  background-color: #c8bc6e;
-  border-color: #c8bc6e;
   border-radius: 10px 10px 10px 10px;
   border-style: solid;
   float: left;
@@ -77,38 +87,11 @@ nav {
   padding-top: 0;
 }
 
-.sc-description-header {
-  background-color: #593300;
-  border-top-color: #c8bc6e;
-  border-radius: 10px 10px 10px 10px;
-  border-top-style: solid;
-  float: left;
-  margin: 0;
-  padding: 16px;
-  padding-top: 0;
-}
-
 .description-content {
   float: left;
 }
 
-.sc-description-content {
-  float: left;
-}
-
-.sc-color1 {
-  color: #c8bc6e
-}
-
-.sc-color2 {
-  color: #7e6332
-}
-
-.sc-color3 {
-  color: #a3a263
-}
-
-/* tab */
+/* project title */
 h1 {
   font-family: 'Suez One';
   font-size: 5vw;
@@ -116,7 +99,7 @@ h1 {
   padding: 0;
 }
 
-/* project title */
+/* project type */
 h2 {
   color: #593300;
   float: left;
@@ -126,7 +109,7 @@ h2 {
   padding: 10px 25px;
 }
 
-/* category */
+/* project subtitles */
 h3 {
   color: #97633e;
   float: right;
@@ -136,7 +119,7 @@ h3 {
   padding: 10px 25px;
 }
 
-/* subtitle */
+/* project subtitles */
 h4 {
   color: #97633e;
   float: left;
@@ -155,29 +138,6 @@ h5 {
   margin: 0;
 }
 
-h6 {
-  width: 100%;
-  float: left;
-  font-family: 'Suez One';
-  font-size: 3vw;
-  margin: 0;
-  margin-left: 10vw;
-  margin-top: 30px;
-}
-
-#current-quote {
-  margin-left: 12vw;
-  font-size: 26px;
-  font-family: 'Arvo';
-}
-
-a { 
-  color: #d3bc89;
-  font-family: 'Arvo';
-  font-size: 26px;
-  margin-left: 30px;
-}
-
 /* description paragraph */
 p {
   color: #d3a27d;
@@ -187,19 +147,13 @@ p {
   margin: 0;
 }
 
-#curr {
-  color: #eea263
-}
+/* Colors */
 
-#quik {
+#quick-links-section-title {
   color: #c8a289
 }
 
-#show {
-  color: #a3a263
-}
-
-#time {
+#timeline-section-title {
   color: #c87d63
 }
 
