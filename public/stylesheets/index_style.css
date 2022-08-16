@@ -57,9 +57,8 @@ body {
   font-family: 'Arvo';
   margin-top: 20px;
   margin-bottom: 0px;
-  
-   width: 66%; /* Can be in percentage also. */
-   position: relative;
+  width: 66%;
+  position: relative;
 }
 
 h1 {
